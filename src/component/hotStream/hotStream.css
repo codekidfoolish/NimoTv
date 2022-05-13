@@ -1,0 +1,23 @@
+.hotStream-top {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.hotStream-title {
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+.hotStream-wrapper {
+    padding: 16px 28px ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hot-streamCard {
+    width: 412px;
+    height: 315px;
+    margin:10px
+}

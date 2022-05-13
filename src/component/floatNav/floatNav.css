@@ -1,0 +1,127 @@
+.floatNav-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 329px;
+    width: 54px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
+    z-index: 10;
+}
+
+.floatNav-img {
+    position: fixed;
+    bottom: 340px;
+    right: 31px;
+    width: 51px;
+    height: 51px;
+    transition: all .5s ease;
+    z-index: 9;
+}
+
+.floatNav-img:hover {
+    transform: translateY(-15px);
+}
+
+.floatNav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floatNav-item {
+    padding: 9px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.floatNav-icon {
+    width: 26px;
+    height: 32px;
+    color: #b4b4b4
+}
+
+.noti-icon {
+    position: absolute;
+    top: 170px;
+    left: 7px;
+    font-size: 1.4rem;
+    color: red;
+    transform: scaleX(-1);
+}
+
+.download-app-modal {
+    position: absolute;
+    right: 65px;
+    bottom: 116px;
+    height: 300px;
+    width: 180px;
+    padding: 8px 10px;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    border-radius: 4px;
+    display: none;
+ }
+
+.download-app-modal::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 108px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+}
+
+.floatNav-download-app::before {
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 15px;
+    height: 131px;
+    background-color: transparent;
+}
+
+.floatNav-download-app:hover .download-app-modal {
+    visibility: visible;
+    display: block;
+}
+
+
+.social-link {
+    width: 100%;
+    padding: 0 14px;
+    margin-top: 12px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.social-link:hover .social-icon,
+.social-link:hover .social-text {
+    color: var(--primary-color)
+}
+
+.social-icon {
+    margin-right: 7px;
+    color: #b4b4b4;
+    transition: all .3s linear;
+}
+
+.qr-code {
+    height: 160px;
+    width: 160px;
+    margin-top: 11px;
+    margin-bottom: 10px;
+}
+
+.social-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: #b4b4b4;
+    transition: all .3s linear;
+}

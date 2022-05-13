@@ -1,0 +1,97 @@
+.teamCard-wrapper {
+    min-width: 620px;
+    height: 260px;
+    position: relative;
+    margin-left: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.teamCard-bottom {
+    width: 600px;
+    height: 220px;
+    margin: 20px 0;
+    padding: 15px 15px 15px 345px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+    background-color: var(--white-color);
+    border-radius: 6px;
+}
+
+.teamCard-desc {
+    font-size: 1.4rem;
+    color: #5a5a5a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.teamCard-center {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 6px;
+
+}
+
+.teamCard-center-img {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: auto;
+    height: 260px;
+    margin-top: 10px;
+    border-radius: 6px;
+    transform: skew(-8.745deg) translateX(-20px);
+    object-fit: cover;
+}
+
+.teamCard-top {
+    position: absolute;
+    top: 128px;
+    right: 52px;
+    width: 330px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, .7);
+    border-radius: 6px;
+    transform: skew(-8.745deg) translateX(-10px);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+}
+
+.teamCard-top-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    margin-left: 15px;
+    transform: skew(8.745deg);
+    object-fit: cover;
+}
+
+.teamCard-name {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 18px;
+    transform: skew(8.745deg)
+}
+
+.more {
+    position: absolute;
+    top: -4px;
+    right: -20px;
+    background-color: #fff;
+    height: 90px;
+    width: 28px;
+    border-left: 1px solid #dcdcdc;
+    border-radius: 0 4px 4px 0;
+    transform: skew(8.745deg);
+}
+
+.more-icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #b4b4b4;
+    font-size: 3rem;
+    text-align: center;
+}

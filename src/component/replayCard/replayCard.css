@@ -1,0 +1,71 @@
+.replayCard-wrapper {
+    display: flex;
+    padding: 10px;
+    margin: 0 10px;
+    width: 508px;
+    height: 75px;
+    position: relative;
+}
+
+.replayCard-wrapper::after {
+    content: '';
+    width: 1px;
+    height: 95px;
+    background-color: #e6e4e4;
+    position: absolute;
+    right: -10px;
+    top:calc(50% - 37.5px)
+}
+
+.replayCard-left {
+    width: 133px;
+    height: 75px;
+}
+
+.replayCard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.replayCard-user {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.replayCard-user-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px
+}
+
+
+.replayCard-right {
+    width: 365px;
+    margin-left: 10px;
+}
+
+.replayCard-right-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.replayCard-view {
+    font-size: 1.4rem;
+    margin-left: 20px;
+}
+
+.replayCard-icon {
+    margin-right: 5px;
+}
+
+.replayCard-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}

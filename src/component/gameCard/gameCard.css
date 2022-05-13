@@ -1,0 +1,55 @@
+.gameCard-wrapper {
+    width: 201px;
+    height: 337px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.gameCard-wrapper:hover::after {
+    display: block
+}
+
+.gameCard-wrapper:hover .gameCard-name {
+    color:#fff
+}
+
+.gameCard-wrapper::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    box-shadow: rgb(98 45 247 / 50%) 0px 10px 20px;
+    margin: 20px 17px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.gameCard-content {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.gameCard-img {
+    width: 190px;
+    height: 284px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.gameCard-name {
+    margin-top: 10px;
+    font-weight: 300;
+}

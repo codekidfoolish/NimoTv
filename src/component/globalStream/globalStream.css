@@ -1,0 +1,19 @@
+.global-streamCard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 14px;
+}
+
+
+
+.global-streamCard {
+    width: 332px;
+    height: 270px;
+    margin: 10px 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%);
+}
+
+.global-streamCard:hover {
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 5%);
+}

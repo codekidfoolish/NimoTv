@@ -1,0 +1,110 @@
+.topGame-wrapper {
+    margin: 20px 30px 0 0;
+}
+
+.topGame-box-deeper {
+    width: 188px;
+    height: 282px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    transform: skew(-8.745deg);
+    cursor: pointer;
+}
+
+.topGame-box-deeper:hover .topGame-box-upper {
+    transform: translateY(-15px) translateX(15px);
+}
+
+.topGame-box-deeper:hover .topGame-overlay {
+    opacity: 1;
+    border: 2px solid var(--primary-color);
+}
+
+.topGame-box-upper {
+    position: relative;
+    width: 188px;
+    height: 282px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.loading,
+.topGame-img {
+    border-radius: 6px;
+    width: 188px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topGame-overlay {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.topGame-name {
+    color: #fff;
+    font-size: 2.9rem;
+    font-style: italic;
+}
+
+
+.underline {
+    height: 8px;
+    width: 40px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.topGame-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.topGame-icon {
+    position: absolute;
+    bottom: 11px;
+    right: 18px;
+    font-size: 2.5rem;
+}
+
+.topGame-desc {
+    margin: 0 0 20px 0;
+}
+
+
+.topGame-title {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 5px 20px 5px 0;
+}
+
+.topGame-live,
+.topGame-type {
+    font-size: 1.2rem;
+    color: #5a5a5a
+}
+
+.topGame-live-counter {
+    margin-right: 3px;
+}
+
+.topGame-type {
+    margin-top: 10px;
+    margin-left: 10px;
+}

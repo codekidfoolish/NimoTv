@@ -1,0 +1,9 @@
+.allGame-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1px;
+}
+
+.allGame-gameCard {
+    margin:0 4px
+}

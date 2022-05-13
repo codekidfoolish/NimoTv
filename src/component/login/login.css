@@ -1,0 +1,217 @@
+
+
+/*=================LOGIN TOP================*/
+
+.login-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.login-modal {
+    width: 572px;
+    min-height: 374px;
+    min-width: 500px;
+    background-color: var(--white-color);
+    padding: 5px 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 15px;
+    cursor: pointer;
+}
+
+.modal-top-left {
+    display: flex;
+    align-items: center;
+    color: #b4b4b4;
+    font-weight: 300;
+}
+
+.modal-logo {
+    width: 92px;
+    height: 24px;
+}
+
+
+.modal-title {
+    margin-left: 30px;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.modal-login {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 1.8rem;
+}
+
+
+
+/*=================LOGIN BOTTOM================*/
+
+.modal-bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+.modal-bottom-left {
+    flex: 7.5;
+    padding: 0 20px
+}
+
+.modal-label {
+    font-size: 1.3rem;
+    color: #b4b4b4;
+    margin: 4px 0;
+    font-weight: 300;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.phone-country {
+    height: 40px;
+    width: 64px;
+    padding: 12px 5px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.input-separate {
+    height: 30px;
+    width: 1px;
+    background-color: #dcdcdc
+}
+
+.modal-input {
+    height: 40px;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+}
+
+.modal-input::placeholder {
+    color: #c5c3c3
+}
+
+.password {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: 9px;
+    top: 22px;
+    color: #dcdcdc;
+    cursor: pointer;
+}
+
+.forgot-password {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    text-align: right;
+    margin-bottom: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.login-button {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.modal-bottom-right {
+    flex: 4.5
+}
+
+.social-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0;
+    padding: 6px 74px 6px 12px;
+    border: 1px solid #dcdcdc;
+    font-weight: 300;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.facebook-link {
+    background-image: url(https://www.nimo.tv/nms/images/fb.cef7e0196a425b1048e237b066853fc3.png);
+}
+
+.google-link {
+    background-image: url(https://www.nimo.tv/nms/images/gg.aa32e0112633342e04844fbfc7b63a0d.png);
+}
+
+.twitter-link {
+    background-image: url(https://www.nimo.tv/nms/images/tw.d0d9e4853afe6acaad9577a0f36134b2.png)
+}
+
+.social-icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 16px;
+}
+
+.social-more {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    text-align: center;
+    cursor: pointer
+}
+
+.terms-policy {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    margin-top: 55px;
+}
+
+.hightlight-text {
+    color: var(--primary-color);
+    cursor: pointer;
+}

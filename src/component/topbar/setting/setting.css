@@ -1,0 +1,75 @@
+.setting-wrapper {
+    background-color: var(--white-color);
+    border-radius: 3px;
+    color: black;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 210px;
+    line-height:40px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 9px 2px rgba(0,0,0,0.14); 
+    box-shadow: 1px 1px 9px 2px rgba(0,0,0,0.14);
+    cursor: pointer;
+}
+
+.setting-item {
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-item:hover {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+
+.setting-item:hover .setting-icon, .setting-item:hover .setting-text  {
+    color: var(--white-color);
+}
+
+.setting-icon {
+    margin-right: 10px;
+    color: var(--text-color)
+}
+
+.setting-text {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.darkmode {
+    align-self: flex-end;
+}
+
+.darkmode-switch-btn{
+    background-color: rgba(0,0,0,.5);;
+    border-radius: 9px;
+    cursor: pointer;
+    height: 18px;
+    padding: 0 4px;
+    width: 36px;
+    position: relative;
+}
+
+.darkmode-btn {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 14px;
+    left: 2px;
+    top: 2px;
+    width: 14px;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+
+.setting-hightlight-text{
+    color: #e02d2d;
+    font-weight: 700;
+}
+
+.setting-text-desc {
+    color: var(--text-color)
+}

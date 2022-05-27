@@ -1,22 +1,38 @@
-.recommended-top {
-    display: flex;
-    justify-content: space-between;
-}
 
 .recommended-wrapper {
     display: flex;
     margin: 0 20px;
 }
 
+.recommended-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommended-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 28px;
+} 
+
 .esport-top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-right: 40px;
+    line-height: 1.35;
 }
 
-.esport-title {
+.esportEvents-title {
     font-size: 3rem;
     font-weight: 700;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.esportEvents-more {
+    color: rgb(97, 96, 96);
     cursor: pointer;
 }
 
@@ -25,7 +41,7 @@
     color: rgb(56, 56, 56);
 }
 
-.recomment-slide {
+.recommended-slide {
     margin-left: 40px;
     display: flex;
     align-items: center;
@@ -45,11 +61,6 @@
     margin: 20px 14px;
 }
 
-.recommended-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-left: 28px;
-}
 
 .re-img-left {
     width: 526px;
@@ -73,8 +84,13 @@
 }
 
 .recommended-right {
-    display: flex;
+    max-width: 456px;
     overflow-x: hidden;
+}
+
+.esportEvent-container {
+    display: flex;
+    transition: all 1s ease;
 }
 
 .re-img-right:hover,

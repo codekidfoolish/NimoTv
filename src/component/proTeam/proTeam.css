@@ -1,8 +1,9 @@
 .proTeam-wrapper {
     display: flex;
     align-items: center;
-    overflow: hidden;
     max-width: 100%;
+    margin-bottom: 50px;
+    transition: all 1s ease;
 }
 
 .proTeam-top {

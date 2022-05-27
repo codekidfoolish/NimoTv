@@ -30,21 +30,26 @@
 .topbar-pages {
     margin-left: 40px;
     font-size: 1.4rem;
+    padding:10px
 }
 
 .topbar-page {
     margin-left: 28px;
     position: relative;
 }
-/* .topbar-category::after {
+
+.topbar-category {
+    position: relative;
+}
+/* 
+.topbar-category::after {
     content: '';
     position: absolute;
-    top: 38px;
+    top: 20px;
     left: -139px;
     background-color: transparent;
     width: 418px;
     height: 335px;
-
 } */
 
 .topbar-page:hover {
@@ -76,11 +81,17 @@
     display: flex;
     align-items: center;
 }
+.search-box.highlight-search {
+    border: 1px solid  #ffc000;
+}
 
 .search-icon {
     width: 10px;
     font-weight: 100;
     margin-right: 5px;
+}
+.search-icon.highlight-search-icon {
+    color: #ffc000;
 }
 
 .search-input {

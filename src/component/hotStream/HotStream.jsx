@@ -7,7 +7,6 @@ function HotStream() {
         <>
             <div className="hotStream-top">
                 <h2 className='hotStream-title'>Hot</h2>
-                <span className="more">More &gt;</span>
             </div>
             <div className="hotStream-wrapper">
                 <span className="hot-streamCard">

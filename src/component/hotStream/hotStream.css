@@ -8,6 +8,9 @@
     font-size: 3rem;
     margin-right: 10px;
 }
+.hotStream-title:hover {
+    color: rgb(56, 56, 56);
+}
 
 .hotStream-wrapper {
     padding: 16px 28px ;

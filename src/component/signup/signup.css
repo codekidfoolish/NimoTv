@@ -18,7 +18,7 @@
 
 }
 
-.login-modal {
+/* .signUp-modal {
     width: 572px;
     min-height: 374px;
     min-width: 500px;
@@ -27,7 +27,8 @@
     border-radius: 10px;
     position: relative;
     z-index: 999;
-}
+    display
+} */
 
 .modal-top {
     display: flex;

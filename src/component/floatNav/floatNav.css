@@ -1,3 +1,5 @@
+
+
 .floatNav-wrapper {
     position: fixed;
     bottom: 30px;
@@ -9,6 +11,12 @@
     box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
     z-index: 10;
 }
+
+.floatNav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 .floatNav-img {
     position: fixed;
@@ -24,11 +32,6 @@
     transform: translateY(-15px);
 }
 
-.floatNav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .floatNav-item {
     padding: 9px;
@@ -39,7 +42,10 @@
 .floatNav-icon {
     width: 26px;
     height: 32px;
-    color: #b4b4b4
+    color: #b4b4b4;
+}
+.scroll-top-icon {
+    transition: all 1s ease;
 }
 
 .noti-icon {

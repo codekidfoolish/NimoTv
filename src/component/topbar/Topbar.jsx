@@ -13,9 +13,14 @@ import SignUp from '../signup/SignUp';
 function Topbar() {
     const [showSetting, setShowSetting] = useState(false)
     const [showSearch, setShowSearch] = useState(false)
-    const [showGames, setShowGames] = useState(false)
+    const [showGames, setShowGames] = useState("none")
     const [showLogin, setShowLogin] = useState(false)
     const [showSignUp, setShowSignUp] = useState(false)
+
+
+    const myStyle = {
+        display: showGames
+    }
     let navigate = useNavigate()
     return (
 
@@ -30,7 +35,8 @@ function Topbar() {
                         Home
                     </span>
                     <span onClick={() => navigate("/live")} className="topbar-page topbar-live">Live</span>
-                    <span onMouseOver={() => setShowGames(!showGames)}
+                    <span onMouseEnter={() => setShowGames("block")}
+                        onMouseLeave={() => setShowGames("none")}
                         onClick={() => navigate("/games")}
                         className="topbar-page topbar-category">
                         Category
@@ -41,16 +47,17 @@ function Topbar() {
                         Esports
                     </span>
                 </div>
-                {
-                    showGames && <CategoryItem />
-                }
+                <div style={myStyle} className="categoryItem">
+                    <CategoryItem />
+                </div>
+
             </div>
             <div className="topbar-right">
                 <div
                     onClick={() => setShowSearch(!showSearch)}
                     onMouseEnter={() => setShowSetting(showSetting === true ? !showSetting : showSetting)}
-                    className="search-box">
-                    <span>  <FontAwesomeIcon className='search-icon' icon={faSearch} /> </span>
+                    className={showSearch === true ? "search-box highlight-search" : "search-box"}>
+                    <span>  <FontAwesomeIcon className= {showSearch === true ? 'search-icon highlight-search-icon': 'search-icon'} icon={faSearch} /> </span>
                     <input type="text" placeholder='thaygiaoba' className="search-input" />
                 </div>
                 {
@@ -66,13 +73,13 @@ function Topbar() {
                     showSetting && <Setting />
                 }
 
-                <button onClick={() => setShowSignUp(!showSignUp)} className="topbar-btn">Sign Up</button>
+                <button onClick={() => setShowLogin(!showLogin)} className="topbar-btn">Sign Up</button>
                 {
-                    showSignUp && <SignUp closeSignUp={setShowSignUp} />
+                    showLogin && <Login />
                 }
                 <button onClick={() => setShowLogin(!showLogin)} className="topbar-btn">Login</button>
                 {
-                    showLogin && <Login closeLogin={setShowLogin} />
+                    showLogin && <Login />
                 }
             </div>
         </div>

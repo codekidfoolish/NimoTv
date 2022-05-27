@@ -1,4 +1,10 @@
+.login-wrapper {
+    display: block
+}
 
+.login-wrapper.close-login {
+    display: none;
+}
 
 /*=================LOGIN TOP================*/
 
@@ -15,7 +21,7 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-
+    
 }
 
 .login-modal {
@@ -27,6 +33,10 @@
     border-radius: 10px;
     position: relative;
     z-index: 999;
+    display: none;
+}
+.login-modal.active {
+    display: block;
 }
 
 .modal-top {
@@ -209,6 +219,226 @@
     font-size: 1.3rem;
     color: #dcdcdc;
     margin-top: 55px;
+}
+
+.hightlight-text {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* ============== SIGN UP =============== */
+
+
+.signUp-modal {
+    width: 572px;
+    min-height: 374px;
+    min-width: 500px;
+    background-color: var(--white-color);
+    padding: 5px 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+    display: none  ;
+}
+
+.signUp-modal.active {
+    display: block;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 15px;
+    cursor: pointer;
+}
+
+.modal-top-left {
+    display: flex;
+    align-items: center;
+    color: #b4b4b4;
+    font-weight: 300;
+}
+
+.modal-logo {
+    width: 92px;
+    height: 24px;
+}
+
+.modal-title {
+    margin-left: 30px;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.modal-signup {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 1.8rem;
+}
+
+
+
+/*=================SIGN UP BOTTOM================*/
+
+.modal-bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+.modal-bottom-left {
+    flex: 7.5;
+    padding: 0 20px
+}
+
+.modal-label {
+    font-size: 1.3rem;
+    color: #b4b4b4;
+    margin: 4px 0;
+    font-weight: 300;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.phone-country {
+    height: 40px;
+    width: 64px;
+    padding: 12px 5px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.input-separate {
+    height: 30px;
+    width: 1px;
+    background-color: #dcdcdc
+}
+
+.modal-input {
+    height: 40px;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+}
+
+.modal-input::placeholder {
+    color: #c5c3c3
+}
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    flex:6;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.email-btn {
+    flex:6;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.password {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: 9px;
+    top: 22px;
+    color: #dcdcdc;
+    cursor: pointer;
+}
+
+.password-desc {
+    font-size: 1.1rem;
+    color: #b4b4b4;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.login-button {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-bottom-right {
+    flex: 4.5
+}
+
+.social-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0;
+    padding: 6px 74px 6px 12px;
+    border: 1px solid #dcdcdc;
+    font-weight: 300;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.social-link-wrapper:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+.social-icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 16px;
+}
+
+.social-more {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    text-align: center;
+    cursor: pointer
+}
+
+.terms-policy {
+    font-size: 1.3rem;
+    color: #b4b4b4;
+    margin-top: 90px;
 }
 
 .hightlight-text {

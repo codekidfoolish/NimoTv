@@ -1,10 +1,30 @@
+import {useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobileScreen, faVideo, faTableList, faBell, faHeadphones, faSquareCaretUp, faAppleAlt, faG, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import './floatNav.css'
 
 function FloatNav() {
+    const [scrollToTop,setScrollToTop] = useState(false)
+    useEffect(() => {
+        window.addEventListener('scroll',() => {
+            if (window.scrollY > 200){
+                setScrollToTop(true)
+            }
+            else {
+                setScrollToTop(false)
+            }
+        })
+    },[])
+
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
     return (
         <>
+        <div className="floatNav">
             <img src="https://www.nimo.tv/nms/images/logo.cf91c5b3be8d65583dac860c4255408c.png" alt="icon"
                 className="floatNav-img" />
             <div className="floatNav-wrapper">
@@ -38,11 +58,17 @@ function FloatNav() {
                     <span className='floatNav-item'>
                         <FontAwesomeIcon className="floatNav-icon" icon={faHeadphones} />
                     </span>
+                    {
+                        scrollToTop && 
                     <span className='floatNav-item'>
-                        <FontAwesomeIcon className="floatNav-icon scroll-top-icon" icon={faSquareCaretUp} />
+                        <FontAwesomeIcon onClick={handleScroll}
+                                         className="floatNav-icon scroll-top-icon" 
+                                         icon={faSquareCaretUp} />
                     </span>
+                    }
                 </div>
             </div>
+        </div>
         </>
     );
 }
